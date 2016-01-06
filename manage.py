@@ -31,7 +31,7 @@ def run_server():
 
 
 @cli.command('resetdb')
-def test(): 
+def test():
     all_models()
 
     app = create_app()
