@@ -4,3 +4,4 @@ Jinja2 == 2.7.3
 click == 6.2
 PyMySQL
 unidecode
+beautifulsoup4 ~= 4.4
