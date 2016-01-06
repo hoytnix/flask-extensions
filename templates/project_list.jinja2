@@ -1,0 +1,9 @@
+{% extends 'layout.jinja2' %}
+
+{% block body %}
+
+{% for project in projects %}
+{{ project.ahref }}
+{% endfor %}
+
+{% endblock %}

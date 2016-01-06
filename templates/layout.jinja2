@@ -6,12 +6,27 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
     </head>
     <body>
-        <h1>flask-extensions.org</h1>
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">flask-extensions.org</a>
+                    </div>
+                    <div id="navbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="/extensions">Extensions</a>
+                            <li><a href="/projects">Projects</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            {% block body %}{% endblock %}
+        
+            <hr>
 
-        {% block body %}{% endblock %}
-    
-        <hr>
-
-        <p>Made with <a href="https://github.com/pr0xmeh/flask-extensions">&hearts;</a> in <a href="http://www.cityofallegan.org/">Allegan</a>, <a href="http://www.michigan.gov/">Michigan</a>. Coded in Vim.</p>
+            <p>Made with <a href="https://github.com/pr0xmeh/flask-extensions">&hearts;</a> in <a href="http://www.cityofallegan.org/">Allegan</a>, <a href="http://www.michigan.gov/">Michigan</a>. Coded in Vim.</p>
+        </div>
     </body>
 </html>

@@ -1,0 +1,9 @@
+{% extends 'layout.jinja2' %}
+
+{% block body %}
+
+{% for extension in extensions %}
+{{ extension.ahref }}
+{% endfor %}
+
+{% endblock %}
