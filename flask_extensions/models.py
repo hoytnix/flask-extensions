@@ -19,6 +19,13 @@ class Extension(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.Text())
+    description = db.Column(db.Text())
+    version = db.Column(db.Text())
+
+    github = db.Column(db.Text())  # user/repo
+    stars = db.Column(db.Integer)
+    forks = db.Column(db.Integer)
+    coverage = db.Column(db.Integer)
 
     @property
     def slug(self):
@@ -40,6 +47,8 @@ class Project(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.Text())
+
+    github = db.Column(db.Text())
 
     @property
     def slug(self):
